@@ -1,0 +1,100 @@
+body{
+    font-family: Merriweather Sans, sans-serif;
+    display: grid;
+    grid-template-areas: 
+    'side main'
+    'side main'
+    'footer footer';
+    grid-template-rows: 1fr 1.5em;
+    grid-template-columns: 18% 1fr;
+    box-sizing: border-box;
+    background-color:#2d3839;
+    color: #bbdec6;
+}
+
+h1,h2,h3,p{
+    margin: 12px;
+}
+h1{
+    font-size: large;
+    font-weight: 700;
+}
+h2{
+    font-size:medium;
+    font-weight: 500;
+}
+p{  
+    font-size: small;
+    font-weight: 200;
+}
+
+.side{
+    height: vh;
+    grid-area: side;
+}
+
+.profile{
+    text-align: center;
+}
+
+.imgProfile{
+    border: solid #2d3839;
+    border-radius: 50%;
+}
+
+.card{
+    box-shadow: 2px 2px #232226;
+    border-radius: 12px;
+    background-color: #114d4d;
+    margin: 20px;
+    padding:10px;
+}
+
+li{
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item{
+    margin-right: 0.6em;
+}
+
+a {
+    text-decoration: none;
+    color: #bbdec6;
+}
+
+.myProjects{
+    display: flex;
+    justify-content: space-between;
+}
+
+.folders{
+    display: flex;
+}
+
+.project {
+    width: 50%;
+}
+
+.main{
+    grid-area: main;
+}
+
+.status{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post{
+    display: flex;
+}
+
+.tagList{
+    display: flex;
+}
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+}
